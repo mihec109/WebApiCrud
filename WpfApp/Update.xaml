@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp.Update"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Update" Height="334" Width="225">
+    <Grid>
+        <TextBox x:Name="Id" Visibility="Collapsed" Text="{Binding Id}" />
+        <TextBox x:Name="Ime" HorizontalAlignment="Left" Margin="25,40,0,0" Text="{Binding Ime}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Priimek" HorizontalAlignment="Left" Margin="25,80,0,0" Text="{Binding Priimek}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EMSO" HorizontalAlignment="Left" Margin="25,160,0,0" Text="{Binding EMSO}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Delovno_mesto" HorizontalAlignment="Left" Margin="25,200,0,0" Text="{Binding Delovno_mesto}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="76,254,0,0" VerticalAlignment="Top" Height="31" Width="69" Click="Button_Click"/>
+        <DatePicker SelectedDate="{Binding Datum_roj}" x:Name="datet" HorizontalAlignment="Left" Margin="25,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="25,265,0,33" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
